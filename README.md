@@ -1,118 +1,181 @@
-# 🎓 Projeto: Machine Learning - Previsão de Desempenho Acadêmico
+# 🎓 Projeto Final: Machine Learning - Previsão de Desempenho Acadêmico
 
 **Disciplina:** Introdução à Machine Learning
-**Professor:** Professor Durval
+**Professor:** [Nome do Professor]
 **Formato:** Trabalho em Grupo (até 5 pessoas)
-**Duração:** 4 semanas (1 etapa por semana)
+**Duração:** 5 semanas (1 etapa por semana)
 
 ---
 
-## 👋 Bem-vindo ao Projeto!
+## 🎯 Objetivo do Projeto
 
-Você acaba de aceitar o convite para o projeto final da disciplina! Este é um repositório **privado** do seu grupo, criado automaticamente pelo GitHub Classroom.
+Desenvolver um modelo de **Machine Learning** completo para prever o desempenho acadêmico final de estudantes universitários, identificando aqueles em risco de baixo desempenho para permitir intervenções preventivas.
 
-### 🎯 O Que Você Vai Fazer
-
-Desenvolver um modelo de **Machine Learning** para prever o desempenho acadêmico final de estudantes universitários, identificando aqueles em risco de baixo desempenho para permitir intervenções preventivas.
-
-### Exemplo de tipo de dataset
-
-**Tipo de problema:** Regressão (prever valores contínuos de 0-100)
-**Dataset:** 2.510 estudantes com 13 variáveis (hábitos de estudo, condições socioeconômicas, saúde)
+**Tipo de problema:** Regressão (prever nota final de 0-100)
+**Dataset:** 2.510 estudantes com 14 variáveis
 
 ---
 
-## 📅 Como Funciona o Projeto (Importante!)
+## 📅 CRONOGRAMA DO PROJETO
 
-### 🔄 Projeto Semanal e Progressivo
+### ⚠️ IMPORTANTE: Projeto Progressivo
 
-**⚠️ ATENÇÃO:** Este projeto **NÃO** entrega tudo de uma vez!
+Este projeto **NÃO** é entregue tudo de uma vez! Você fará **5 etapas sequenciais**, uma por semana.
 
-Você receberá **instruções semanais** do professor. Cada semana terá:
-- 📋 Objetivos específicos da etapa
-- 📚 Material de apoio necessário
-- ✅ Critérios de avaliação da semana
-- 🎯 Entregáveis esperados
+Cada etapa tem:
+- 📋 Instruções específicas detalhadas
+- 💻 Entregável técnico (notebook ou arquivo)
+- 🎤 **Apresentação obrigatória**
+- ✅ Critérios de avaliação claros
 
-**Não tente fazer tudo agora!** Siga o cronograma semanal do professor.
+| Semana | Etapa | Entregáveis | Apresentação |
+|:------:|-------|-------------|:------------:|
+| **1** | [📊 EDA - Análise Exploratória](#-etapa-1-eda) | `notebooks/01_EDA.ipynb` | ❌ Não |
+| **2** | [🔧 Pré-processamento](#-etapa-2-pré-processamento) | Notebook + Dataset limpo | ✅ 10 min |
+| **3** | [🤖 Modelagem](#-etapa-3-modelagem) | `notebooks/03_Modelagem.ipynb` | ✅ 15 min |
+| **4** | [⚡ Otimização](#-etapa-4-otimização) | Notebook + Modelo final | ✅ 15 min |
+| **5** | [🎤 Apresentação Final](#-etapa-5-apresentação-final) | Relatório completo | ✅ 20-25 min |
 
-### 📆 Visão Geral das Etapas
-
-| Semana | Etapa | O Que Você Vai Fazer |
-|:------:|-------|----------------------|
-| **1** | Análise Exploratória (EDA) | Conhecer e entender os dados |
-| **2** | Pré-processamento | Limpar e preparar os dados |
-| **3** | Modelagem | Treinar e comparar modelos |
-| **4** | Otimização e Relatório | Ajustar modelo e documentar |
-
-📖 **Instruções detalhadas de cada etapa serão fornecidas pelo professor no início de cada semana.**
+**Total de apresentações:** 4 apresentações (Etapas 2, 3, 4, e 5)
 
 ---
 
-## 👥 Trabalho em Grupo no GitHub Classroom
+## 📖 ETAPAS DETALHADAS
 
-### Como Funciona
+### 📊 Etapa 1: EDA
 
-Vocês estão trabalhando em um **repositório compartilhado do grupo**. Todos os membros têm acesso ao mesmo repositório.
+**O que fazer:** Conhecer e entender profundamente os dados
+**Entregáveis:** `notebooks/01_EDA.ipynb`
+**Apresentação:** Não há apresentação nesta etapa
+**Peso:** 20%
 
-#### Se você foi o PRIMEIRO a aceitar:
-✅ Você criou o grupo
-✅ Este é o repositório do seu grupo
-✅ Aguarde seus colegas se juntarem
+**Principais análises:**
+- Estatísticas descritivas
+- Valores faltantes
+- Distribuições
+- Outliers
+- Correlações
 
-#### Se você NÃO foi o primeiro:
-✅ Você se juntou ao grupo criado por um colega
-✅ Este é o repositório compartilhado de todos
-✅ Você tem acesso total para colaborar
-
-### 🤝 Boas Práticas de Colaboração
-
-#### 1. Comuniquem-se Sempre
-- Decidam juntos quem fará o quê
-- Não trabalhem no mesmo arquivo ao mesmo tempo
-- Usem Issues do GitHub para organizar tarefas
-
-#### 2. Façam Commits Frequentes
-```bash
-# Antes de começar a trabalhar
-git pull origin main
-
-# Depois de fazer mudanças
-git add .
-git commit -m "Descrição clara do que fez"
-git push origin main
-```
-
-#### 3. Dividam as Tarefas
-**Sugestão de papéis:**
-- 📊 **Analista de Dados:** EDA e visualizações
-- 🔧 **Engenheiro de Dados:** Limpeza e pré-processamento
-- 🤖 **Cientista ML:** Modelagem e otimização
-- 📝 **Documentador:** Relatórios e apresentação
-- 🧪 **Testador:** Validação e testes
-
-*Nota: Em grupos menores, membros acumulam funções.*
-
-#### 4. Revisem o Trabalho uns dos Outros
-- Antes de fazer push, peça a um colega para revisar
-- Use comentários no código para explicar decisões
-- Documentem TUDO em células markdown nos notebooks
+📄 **[Ver instruções completas →](etapas/etapa1/README.md)**
 
 ---
 
-## 🚀 Primeiros Passos (Faça Isso AGORA)
+### 🔧 Etapa 2: Pré-processamento
+
+**O que fazer:** Limpar e preparar dados para modelagem
+**Entregáveis:**
+- `notebooks/02_Preprocessamento.ipynb`
+- `data/processed/dataset_clean.csv`
+- **🎤 Apresentação de 10 minutos**
+
+**Peso:** 20% (15% notebook + 5% apresentação)
+
+**Principais tarefas:**
+- Tratamento de missing values
+- Tratamento de outliers
+- Encoding de categóricas
+- Feature engineering (criar novas features)
+- Normalização/Padronização
+
+**Apresentação deve incluir:**
+- Problemas identificados
+- Decisões de tratamento e justificativas
+- Features criadas
+- Comparação antes vs depois
+
+📄 **[Ver instruções completas →](etapas/etapa2/README.md)**
+
+---
+
+### 🤖 Etapa 3: Modelagem
+
+**O que fazer:** Treinar e comparar múltiplos modelos de ML
+**Entregáveis:**
+- `notebooks/03_Modelagem.ipynb`
+- **🎤 Apresentação de 15 minutos**
+
+**Peso:** 20% (15% notebook + 5% apresentação)
+
+**Principais tarefas:**
+- Modelo baseline (Regressão Linear)
+- Testar pelo menos 5 modelos diferentes
+- Validação cruzada
+- Comparar métricas (MAE, RMSE, R²)
+- Selecionar melhor modelo
+
+**Apresentação deve incluir:**
+- Modelos testados
+- Comparação de desempenho (gráficos!)
+- Melhor modelo e justificativa
+- Análise de erros
+
+📄 **[Ver instruções completas →](etapas/etapa3/README.md)**
+
+---
+
+### ⚡ Etapa 4: Otimização
+
+**O que fazer:** Otimizar hiperparâmetros do melhor modelo
+**Entregáveis:**
+- `notebooks/04_Otimizacao.ipynb`
+- `models/modelo_final.joblib`
+- **🎤 Apresentação de 15 minutos**
+
+**Peso:** 20% (15% notebook + 5% apresentação)
+
+**Principais tarefas:**
+- Grid Search ou Random Search
+- Otimização de hiperparâmetros
+- Avaliação final no conjunto de teste
+- Análise de erros detalhada
+- Salvamento do modelo
+
+**Apresentação deve incluir:**
+- Processo de otimização
+- Hiperparâmetros antes vs depois
+- Desempenho final no teste
+- Limitações do modelo
+
+📄 **[Ver instruções completas →](etapas/etapa4/README.md)**
+
+---
+
+### 🎤 Etapa 5: Apresentação Final
+
+**O que fazer:** Documentar e apresentar todo o projeto
+**Entregáveis:**
+- `docs/RELATORIO_FINAL.md` (10-15 páginas)
+- **🎤 Apresentação de 20-25 minutos**
+- Repositório completo e organizado
+
+**Peso:** 20% (10% relatório + 10% apresentação)
+
+**Relatório deve incluir:**
+- Resumo executivo
+- EDA e descobertas
+- Pré-processamento e decisões
+- Modelagem e comparações
+- Resultados finais
+- Conclusões e trabalhos futuros
+
+**Apresentação deve incluir:**
+- Todas as etapas do projeto
+- Resultados alcançados
+- Demonstração ao vivo
+- Conclusões
+
+📄 **[Ver instruções completas →](etapas/etapa5/README.md)**
+
+---
+
+## 🚀 COMO COMEÇAR
 
 ### 1️⃣ Clone o Repositório
 
-Cada membro do grupo deve clonar:
-
 ```bash
-# Substituir [URL-DO-SEU-REPOSITORIO] pela URL real
 git clone [URL-DO-SEU-REPOSITORIO]
 cd [nome-do-repositorio]
 ```
-
-💡 **Onde encontrar a URL:** Clique no botão verde "Code" aqui no GitHub
 
 ### 2️⃣ Configure o Ambiente
 
@@ -127,109 +190,203 @@ venv\Scripts\activate     # Windows
 
 # Instalar dependências
 pip install -r requirements.txt
-
-# Verificar instalação
-python -c "import pandas, numpy, sklearn; print('✅ Ambiente pronto!')"
 ```
 
-### 3️⃣ Explore o Repositório
+### 3️⃣ Explore o Dataset
 
 ```bash
-# Listar arquivos
-ls -la
-
-# Ver estrutura
-tree -L 2  # ou usar explorador de arquivos
-```
-
-### 4️⃣ Iniciar Jupyter Notebook
-
-```bash
+# Iniciar Jupyter
 jupyter notebook
+
+# Abra: notebooks/00_EXEMPLO_STARTER.py
+# Ou navegue até: data/raw/students_performance.csv
 ```
 
-O navegador abrirá automaticamente. Navegue até `data/raw/` para ver o dataset.
+### 4️⃣ Leia as Instruções da Etapa Atual
+
+**Etapa 1:** Leia `etapas/etapa1/README.md` antes de começar!
 
 ---
 
-## 📊 Sobre o Dataset
+## 📁 ESTRUTURA DO REPOSITÓRIO
 
-### Informações Básicas
+```
+.
+├── README.md                    # ⭐ Este arquivo - LEIA PRIMEIRO!
+│
+├── etapas/                      # 📖 INSTRUÇÕES DE CADA ETAPA
+│   ├── etapa1/
+│   │   └── README.md           # ⭐ Instruções detalhadas Etapa 1
+│   ├── etapa2/
+│   │   └── README.md           # ⭐ Instruções detalhadas Etapa 2
+│   ├── etapa3/
+│   │   └── README.md           # ⭐ Instruções detalhadas Etapa 3
+│   ├── etapa4/
+│   │   └── README.md           # ⭐ Instruções detalhadas Etapa 4
+│   └── etapa5/
+│       ├── README.md           # ⭐ Instruções detalhadas Etapa 5
+│       └── TEMPLATE_RELATORIO_FINAL.md
+│
+├── data/
+│   ├── raw/                    # Dados originais (NÃO MODIFICAR!)
+│   │   ├── students_performance.csv
+│   │   └── README.md          # Documentação do dataset
+│   └── processed/             # Dados limpos (você cria na Etapa 2)
+│
+├── notebooks/                  # Seus notebooks Jupyter
+│   ├── 00_EXEMPLO_STARTER.py  # Código de exemplo
+│   ├── 01_EDA.ipynb           # (você cria - Etapa 1)
+│   ├── 02_Preprocessamento.ipynb # (você cria - Etapa 2)
+│   ├── 03_Modelagem.ipynb     # (você cria - Etapa 3)
+│   └── 04_Otimizacao.ipynb    # (você cria - Etapa 4)
+│
+├── models/                     # Modelos treinados
+│   └── modelo_final.joblib    # (você cria - Etapa 4)
+│
+├── docs/                       # Documentação e apresentações
+│   ├── BOAS_PRATICAS.md       # ⭐ Leia! Guia de boas práticas
+│   ├── apresentacao_etapa2.pdf # (você cria)
+│   ├── apresentacao_etapa3.pdf # (você cria)
+│   ├── apresentacao_etapa4.pdf # (você cria)
+│   ├── apresentacao_final.pdf  # (você cria - Etapa 5)
+│   └── RELATORIO_FINAL.md     # (você cria - Etapa 5)
+│
+├── requirements.txt            # Dependências Python
+└── .gitignore                 # Arquivos ignorados pelo Git
+```
 
-- **Arquivo:** `data/raw/students_performance.csv`
-- **Registros:** 2.510 estudantes universitários
-- **Features:** 13 variáveis
-- **Variável Alvo:** `final_grade` (nota final, 0-100 pontos)
+---
+
+## 👥 TRABALHO EM GRUPO
+
+### Como Funciona no GitHub Classroom
+
+- Este é um **repositório compartilhado** do grupo
+- Todos os membros têm acesso completo
+- Trabalhem em colaboração
+
+### 🤝 Boas Práticas de Colaboração
+
+**1. Comuniquem-se sempre**
+- Decidam quem faz o quê
+- Usem Issues do GitHub para organizar tarefas
+
+**2. Commits frequentes**
+```bash
+# Antes de trabalhar
+git pull origin main
+
+# Depois de mudanças
+git add .
+git commit -m "Descrição clara"
+git push origin main
+```
+
+**3. Divisão de tarefas**
+- 📊 Analista de Dados: EDA e visualizações
+- 🔧 Engenheiro de Dados: Pré-processamento
+- 🤖 Cientista ML: Modelagem
+- 📝 Documentador: Relatórios
+- 🎤 Apresentador: Preparar slides
+
+*Grupos menores: membros acumulam funções*
+
+**4. Apresentações: TODOS devem participar!**
+- Etapa 2: ~2-3 min por pessoa
+- Etapa 3: ~3 min por pessoa
+- Etapa 4: ~3 min por pessoa
+- Etapa 5: ~4-5 min por pessoa
+
+---
+
+## 📊 SOBRE O DATASET
+
+**Arquivo:** `data/raw/students_performance.csv`
+**Registros:** 2.510 estudantes
+**Features:** 14 variáveis
+**Target:** `final_grade` (0-100 pontos)
 
 ### Categorias de Variáveis
 
 - 👤 **Demográficas:** idade, gênero, educação dos pais
-- 📚 **Acadêmicas:** notas anteriores, frequência, horas de estudo, tutoria
-- 💻 **Infraestrutura:** qualidade da internet, atividades extracurriculares
-- 🏥 **Bem-estar:** horas de sono, estado de saúde
+- 📚 **Acadêmicas:** notas anteriores, frequência, horas de estudo
+- 💻 **Infraestrutura:** internet, atividades extracurriculares
+- 🏥 **Bem-estar:** sono, saúde
 - 💰 **Socioeconômicas:** renda familiar
 
-### ⚠️ Desafios do Dataset
+### ⚠️ Desafios
 
-O dataset contém **problemas intencionais** (dados do mundo real):
-- Valores faltantes (~8% dos dados)
-- Outliers e valores impossíveis
-- Inconsistências e erros de formatação
+O dataset contém problemas intencionais (dados do mundo real):
+- Valores faltantes (~8%)
+- Outliers
+- Inconsistências
 
-**Você precisará identificar e tratar esses problemas!**
+**Você precisará identificar e tratar!**
 
 📖 **Documentação completa:** `data/raw/README.md`
 
 ---
 
-## 📁 Estrutura do Repositório
+## ✅ REGRAS IMPORTANTES
 
-```
-.
-├── README.md                      # ⭐ Este arquivo (leia primeiro!)
-│
-├── data/
-│   ├── raw/                       # Dados originais (NÃO MODIFICAR!)
-│   │   ├── students_performance.csv
-│   │   └── README.md             # Documentação do dataset
-│   └── processed/                 # Dados limpos (vocês criam)
-│
-├── notebooks/                     # Notebooks Jupyter (seu trabalho)
-│   ├── 00_EXEMPLO_STARTER.py     # Código de exemplo (ponto de partida)
-│   └── README.md                 # Guia dos notebooks
-│
-├── src/                          # Scripts Python (opcional)
-│
-├── docs/                         # Documentação adicional
-│   ├── BOAS_PRATICAS.md         # ⭐ Leia! Guia de boas práticas
-│   └── TEMPLATE_RELATORIO_FINAL.md  # Template para relatório final
-│
-├── requirements.txt              # Dependências do projeto
-└── .gitignore                   # Arquivos ignorados pelo Git
-```
+### O Que Você DEVE Fazer
 
-### 🗂️ Onde Criar Seus Arquivos
+- ✅ Seguir o cronograma semanal
+- ✅ Ler as instruções da etapa ANTES de começar
+- ✅ Documentar TUDO em markdown
+- ✅ Preparar apresentações com antecedência
+- ✅ TODOS os membros devem apresentar
+- ✅ Fazer commits frequentes
+- ✅ Executar "Restart & Run All" antes de entregar
 
-Durante o projeto, vocês criarão:
+### O Que Você NÃO DEVE Fazer
 
-- **Semana 1:** `notebooks/01_EDA.ipynb`
-- **Semana 2:** `notebooks/02_Preprocessamento_Baseline.ipynb` + `data/processed/dataset_clean.csv`
-- **Semana 3:** `notebooks/03_Modelos_Avancados.ipynb`
-- **Semana 4:** `notebooks/04_Otimizacao_Final.ipynb` + `docs/RELATORIO_FINAL.md`
+- ❌ Pular etapas ou tentar fazer tudo de uma vez
+- ❌ Modificar `data/raw/` (dados originais)
+- ❌ Copiar código sem entender (= plágio)
+- ❌ Deixar uma pessoa fazer tudo sozinha
+- ❌ Fazer apresentação sem ensaiar
+- ❌ Um membro dominar toda a apresentação
 
 ---
 
-## 📚 Recursos Disponíveis
+## 🎤 APRESENTAÇÕES - DICAS IMPORTANTES
 
-### Documentação Incluída no Projeto
+### Preparação
 
-| Arquivo | Para Que Serve |
-|---------|----------------|
-| **`data/raw/README.md`** | Descrição completa de cada variável do dataset |
-| **`notebooks/README.md`** | Como organizar seus notebooks, boas práticas |
-| **`notebooks/00_EXEMPLO_STARTER.py`** | Código exemplo de EDA (~300 linhas comentadas) |
-| **`docs/BOAS_PRATICAS.md`** | Guia de código limpo, visualizações, modelagem |
-| **`docs/TEMPLATE_RELATORIO_FINAL.md`** | Estrutura completa para relatório final |
+1. **Dividam o tempo** igualmente entre membros
+2. **Ensaiem** pelo menos 2x antes da apresentação
+3. **Criem slides** profissionais e legíveis
+4. **Preparem para perguntas** dos colegas e professor
+
+### Design dos Slides
+
+- ✅ Fonte mínima: 24pt (título), 18pt (corpo)
+- ✅ Máximo 5-6 bullets por slide
+- ✅ Gráficos grandes e legíveis
+- ❌ Evitem texto em excesso
+- ❌ Evitem copiar/colar código
+
+### Apresentação Oral
+
+- ✅ Olhem para a audiência
+- ✅ Expliquem os gráficos
+- ✅ Sejam objetivos
+- ❌ Não leiam os slides
+- ❌ Não ultrapassem o tempo
+
+---
+
+## 📚 RECURSOS ÚTEIS
+
+### Documentação Incluída
+
+| Arquivo | Utilidade |
+|---------|-----------|
+| `data/raw/README.md` | Descrição completa do dataset |
+| `notebooks/00_EXEMPLO_STARTER.py` | Código exemplo de EDA |
+| `docs/BOAS_PRATICAS.md` | Guia de código limpo |
+| `etapas/etapaX/README.md` | Instruções detalhadas de cada etapa |
 
 ### Bibliotecas Principais
 
@@ -239,70 +396,36 @@ Durante o projeto, vocês criarão:
 - **scikit-learn** - Machine Learning
 - **xgboost / lightgbm** - Modelos avançados
 
-### Links Úteis
+### Links Externos
 
-- 📖 [Pandas Documentation](https://pandas.pydata.org/docs/)
-- 🤖 [Scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)
-- 📊 [Seaborn Gallery](https://seaborn.pydata.org/examples/index.html)
-- 🎨 [Matplotlib Tutorials](https://matplotlib.org/stable/tutorials/index.html)
-
----
-
-## ⚠️ Regras Importantes
-
-### ✅ O Que Você DEVE Fazer
-
-- ✅ Criar notebooks na pasta `notebooks/`
-- ✅ Fazer commits frequentes com mensagens descritivas
-- ✅ Documentar TUDO em células markdown
-- ✅ Salvar dados processados em `data/processed/`
-- ✅ Consultar `docs/BOAS_PRATICAS.md` antes de começar
-- ✅ Trabalhar em colaboração (todos contribuem!)
-- ✅ Executar "Restart & Run All" antes de cada entrega
-- ✅ Seguir o cronograma semanal do professor
-
-### ❌ O Que Você NÃO DEVE Fazer
-
-- ❌ Modificar arquivos em `data/raw/` (dados originais)
-- ❌ Fazer commit de arquivos grandes (modelos `.pkl` > 100MB)
-- ❌ Copiar código de outros grupos (= plágio)
-- ❌ Deixar todo o trabalho para uma pessoa só
-- ❌ Fazer commit sem testar o código antes
-- ❌ Trabalhar no mesmo arquivo simultaneamente (use branches!)
-- ❌ Tentar fazer todas as 4 semanas de uma vez
+- [Pandas Docs](https://pandas.pydata.org/docs/)
+- [Scikit-learn Guide](https://scikit-learn.org/stable/user_guide.html)
+- [Seaborn Gallery](https://seaborn.pydata.org/examples/index.html)
 
 ---
 
-## 🆘 Precisa de Ajuda?
+## 🆘 PRECISA DE AJUDA?
 
 ### Dúvidas Técnicas
 
-1. **Sobre o dataset:** Leia `data/raw/README.md`
-2. **Como começar:** Veja `notebooks/00_EXEMPLO_STARTER.py`
-3. **Boas práticas:** Leia `docs/BOAS_PRATICAS.md`
-4. **Erros no código:** Consulte a documentação das bibliotecas
-5. **Git/GitHub:** Pergunte ao professor ou colegas
+1. Leia as **instruções da etapa** (`etapas/etapaX/README.md`)
+2. Consulte a **documentação do dataset** (`data/raw/README.md`)
+3. Veja o **código de exemplo** (`notebooks/00_EXEMPLO_STARTER.py`)
+4. Consulte **boas práticas** (`docs/BOAS_PRATICAS.md`)
+5. Procure o professor no horário de atendimento
 
-### Dúvidas sobre o Projeto
+### Dúvidas sobre Apresentações
 
-- 📧 **E-mail do professor:** [email do professor]
-- 💬 **Horário de atendimento:** [horário]
-- 📌 **Fórum da disciplina:** [link se houver]
+- Veja critérios de avaliação em cada `etapas/etapaX/README.md`
+- Consulte dicas de apresentação na Etapa 5
+- Ensaie com o grupo e peça feedback
 
 ### Problemas com Git
 
-**Erro comum: "Updates were rejected"**
-```bash
-# Sempre puxe antes de fazer push
-git pull origin main
-git push origin main
-```
-
 **Conflitos de merge:**
 ```bash
-# Peça ajuda ao professor ou use:
-git status  # Ver arquivos em conflito
-# Edite os arquivos, resolva os conflitos
+git pull origin main
+# Resolva conflitos nos arquivos
 git add .
 git commit -m "Resolve conflitos"
 git push origin main
@@ -310,95 +433,69 @@ git push origin main
 
 ---
 
-## 🎯 Checklist da Primeira Semana
+## 🎯 CHECKLIST GERAL
 
-Antes de começar a trabalhar, certifique-se de que:
+Antes de cada entrega:
 
-- [ ] Todos os membros do grupo aceitaram o convite
-- [ ] Todos clonaram o repositório
-- [ ] Todos configuraram o ambiente virtual
-- [ ] Todos instalaram as dependências (`requirements.txt`)
-- [ ] Vocês leram `data/raw/README.md` (documentação do dataset)
-- [ ] Vocês leram `docs/BOAS_PRATICAS.md`
-- [ ] Vocês dividiram as tarefas entre os membros
-- [ ] Vocês testaram fazer commit e push
+- [ ] Li as instruções da etapa completas
+- [ ] Notebook executa "Restart & Run All" sem erros
+- [ ] Código está documentado em markdown
+- [ ] Commits foram feitos com mensagens descritivas
+- [ ] (Se aplicável) Apresentação está preparada
+- [ ] (Se aplicável) Todos os membros sabem sua parte
+- [ ] (Se aplicável) Ensaiamos a apresentação
 
 ---
 
-## 💡 Dicas de Sucesso
+## 💡 DICAS DE SUCESSO
 
 ### Para o Grupo
 
-- 🤝 **Comuniquem-se constantemente** (WhatsApp, Discord, etc.)
-- 📅 **Marquem reuniões semanais** para alinhar o trabalho
-- 🎯 **Definam metas claras** para cada semana
-- 🔄 **Revisem o código uns dos outros** antes de fazer push
-- 📊 **Mantenham um registro** de quem fez o quê (para o relatório final)
+- 🤝 Comuniquem-se constantemente
+- 📅 Marquem reuniões semanais
+- 🎯 Definam metas claras
+- 🔄 Revisem o trabalho uns dos outros
 
 ### Para o Código
 
-- 💬 **Comentem TUDO** - você vai esquecer o que fez daqui 1 semana
-- 📝 **Usem markdown** - expliquem descobertas, decisões, raciocínio
-- 🎨 **Caprichem nas visualizações** - títulos, labels, legendas
-- 🧪 **Testem antes de commitar** - execute "Restart & Run All"
-- 🔍 **Sejam curiosos** - explore os dados além do mínimo exigido
+- 💬 Comentem TUDO
+- 📝 Usem markdown para explicar
+- 🎨 Caprichem nas visualizações
+- 🧪 Testem antes de commitar
 
-### Para Git/GitHub
+### Para Apresentações
 
-- ✍️ **Commits descritivos:** `"feat: Adiciona análise de correlação"` em vez de `"update"`
-- 🔄 **Pull antes de Push:** Sempre `git pull` antes de `git push`
-- 🌿 **Branches (opcional):** Para trabalhar em paralelo sem conflitos
-- 💾 **Commits frequentes:** Pequenos commits > 1 commit gigante
-
----
-
-## 📖 Como Usar Este README
-
-**1. Leia este README completo primeiro** (você está aqui!)
-
-**2. Configure seu ambiente** (seção "Primeiros Passos")
-
-**3. Explore a documentação:**
-   - `data/raw/README.md` - Entenda o dataset
-   - `docs/BOAS_PRATICAS.md` - Aprenda boas práticas
-   - `notebooks/README.md` - Veja como organizar notebooks
-
-**4. Aguarde instruções do professor** para a Semana 1
-
-**5. Comece a trabalhar!** 🚀
+- ⏱️ Cronometre durante ensaios
+- 🎤 Pratique falar claramente
+- 📊 Use gráficos, não tabelas de números
+- 🤝 Distribua tempo igualmente
 
 ---
 
-## ❓ Perguntas Frequentes
+## 📖 PRÓXIMOS PASSOS
 
-**P: Posso começar a fazer tudo agora?**
-R: Não! Aguarde as instruções semanais do professor. Cada semana tem objetivos específicos.
+**AGORA:**
+1. ✅ Formar grupo (até 5 pessoas)
+2. ✅ Todos clonarem o repositório
+3. ✅ Configurar ambiente Python
+4. ✅ Ler `data/raw/README.md`
+5. ✅ Ler `etapas/etapa1/README.md`
 
-**P: Como sei qual parte do trabalho devo fazer?**
-R: Dividam as tarefas em reunião de grupo. Todos devem contribuir!
-
-**P: Posso usar código da internet?**
-R: Sim, mas você deve ENTENDER e ADAPTAR. Copiar sem entender = plágio.
-
-**P: E se eu não souber fazer algo?**
-R: Consulte a documentação, peça ajuda aos colegas, procure o professor.
-
-**P: Preciso saber Git muito bem?**
-R: Não. Você aprenderá no processo. Use os comandos básicos (pull, add, commit, push).
-
-**P: O que acontece se meu grupo não colaborar?**
-R: Documente sua contribuição nos commits. Procure o professor se houver problemas sérios.
+**DEPOIS:**
+6. Começar Etapa 1 - EDA
+7. Seguir cronograma semanal
+8. Consultar instruções de cada etapa
 
 ---
 
-## 🎉 Pronto para Começar!
+## 🎉 Boa Sorte!
 
-Você tem tudo que precisa para iniciar o projeto. Siga o cronograma semanal, trabalhe em equipe e consulte a documentação quando necessário.
+Vocês têm tudo que precisam para desenvolver um projeto completo de Machine Learning. Sigam o cronograma, trabalhem em equipe, preparem boas apresentações e consultem a documentação quando necessário.
 
-**Boa sorte e bom código!** 🚀
+**Vamos nessa!** 🚀
 
 ---
 
-**📌 Próximo Passo:** Aguarde as instruções da **Semana 1** do professor.
+**📌 Próximo Passo:** Leia **[etapas/etapa1/README.md](etapas/etapa1/README.md)** para começar!
 
 *Última atualização: Outubro 2027*
