@@ -1,0 +1,286 @@
+# ============================================
+# .gitignore para Projeto de Machine Learning
+# ============================================
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ============================================
+# Jupyter Notebook
+# ============================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# ============================================
+# Data Files (comentar se quiser versionar)
+# ============================================
+# Dados brutos grandes
+# data/raw/*.csv
+# data/raw/*.xlsx
+# data/raw/*.json
+
+# Dados processados
+# data/processed/*.csv
+
+# Manter apenas samples
+!data/raw/sample*.csv
+
+# ============================================
+# Models (descomentar se modelos forem grandes)
+# ============================================
+# Modelos treinados podem ser grandes (> 100MB)
+# models/*.pkl
+# models/*.h5
+# models/*.pt
+# models/*.pth
+# models/*.joblib
+
+# Manter apenas o melhor modelo
+# !models/best_model.pkl
+
+# ============================================
+# IDE e Editores
+# ============================================
+# VS Code
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ============================================
+# Sistema Operacional
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================
+# Logs e Temporários
+# ============================================
+*.log
+*.tmp
+*.temp
+logs/
+tmp/
+
+# ============================================
+# Outputs e Reports (opcional)
+# ============================================
+# Descomentar se não quiser versionar figuras
+# reports/figures/*.png
+# reports/figures/*.jpg
+# reports/figures/*.pdf
+
+# Manter READMEs
+!reports/figures/README.md
+
+# ============================================
+# Específico do Projeto
+# ============================================
+# Dados de teste privados
+data/test_private/
+
+# Experimentos
+experiments/
+scratch/
+sandbox/
+
+# Resultados temporários
+results_temp/
+
+# Checkpoints de treinamento
+checkpoints/
+
+# ============================================
+# Jupyter Notebook outputs
+# ============================================
+# Descomentar para limpar todos os outputs dos notebooks
+# *.ipynb
+
+# ============================================
+# Database
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# Secrets e Credenciais
+# ============================================
+.env
+.env.local
+.env.*.local
+secrets.json
+credentials.json
+*.key
+*.pem
+
+# API Keys
+api_keys.txt
+config_private.py
+
+# ============================================
+# Backup Files
+# ============================================
+*.bak
+*.backup
+*~
+
+# ============================================
+# Archives
+# ============================================
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Exceto datasets compactados (descomentar se necessário)
+# !data/raw/*.zip
+
+# ============================================
+# Documentation builds
+# ============================================
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# Sphinx
+_build/
+_static/
+
+# ============================================
+# Package Management
+# ============================================
+Pipfile.lock
+poetry.lock
+
+# ============================================
+# Misc
+# ============================================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Ruff
+.ruff_cache/
+
+# ============================================
+# NOTAS
+# ============================================
+#
+# Como usar:
+# 1. Copie este arquivo para a raiz do seu projeto
+# 2. Renomeie para .gitignore (sem template)
+# 3. Ajuste conforme suas necessidades
+# 4. Commit: git add .gitignore && git commit -m "chore: adiciona .gitignore"
+#
+# Dicas:
+# - Use '!' para forçar inclusão de arquivos específicos
+# - Use '/' no final para indicar diretórios
+# - Use '*' como wildcard
+# - Linhas iniciadas com '#' são comentários
+#
+# Para ignorar arquivos já commitados:
+#   git rm --cached <file>
+#   git commit -m "chore: remove arquivo do tracking"
+#
+# ============================================
